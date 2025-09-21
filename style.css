@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General */
+body {
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/003/098/568/small_2x/young-girl-online-studying-at-home-free-vector.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Login Section */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.login-section .card {
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-section input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #1f2011;
+  font-size: 1rem;
+}
+
+.login-section .note {
+  font-size: 0.9rem;
+  color: #241616;
+  margin-top: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0b0c0b;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #6cdd8546, #bf974c54);
+  color: #050303;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(8, 6, 6);
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #14130edc;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 0;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero h2, .hero p, .hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #070502, #143515);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #03270f, #053004);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+/* Cards with Glassmorphism */
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border-radius: 30px;
+  margin-top: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.progress {
+  background: linear-gradient(90deg, #733d75dc, #4e4255);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  animation: progressAnim 2s ease-out;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #061524, #bf4c9957);
+  color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 -3px 10px rgba(70, 27, 27, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes progressAnim {
+  from { width: 0; }
+  to { width: 60%; }
+}
